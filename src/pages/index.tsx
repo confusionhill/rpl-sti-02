@@ -4,13 +4,18 @@ import Image from "next/image";
 import reactLogo from "../assets/react.svg";
 import tauriLogo from "../assets/tauri.svg";
 import nextLogo from "../assets/next.svg";
+import { Store } from 'tauri-plugin-store-api';
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
   const [name, setName] = useState("");
 
+  const store = new Store('.settings.dat');
+
   async function greet() {
     setGreetMsg(await invoke("greet", { name }));
+    await store.set('some-key', { value: 5 });
+    console.log("memsmsms")
   }
 
   return (
@@ -63,7 +68,7 @@ function App() {
             placeholder="Enter a name..."
           />
           <button type="button" onClick={() => greet()}>
-            {name}
+            Submit
           </button>
         </div>
       </div>

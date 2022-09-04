@@ -1,0 +1,9 @@
+{
+    "add-todo": "INSERT INTO todo_list (title, date, completed) VALUES ($1,$2,$3);",
+    "get-todo-all": "SELECT * FROM todo_list;",
+    "get-todo-completed": "SELECT * FROM todo_list WHERE completed=true;",
+    "get-todo-uncompleted": "SELECT * FROM todo_list WHERE completed=false;",
+    "get-todo-today": "SELECT * FROM todo_list WHERE date=now --bantuan rey;",
+    "update-todo-status": "UPDATE todo_list SET completed=true WHERE id=$1;",
+    "delete-todo": "DELETE FROM todo_list WHERE id=$1;"
+}

@@ -79,7 +79,7 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tauri-apps/api@^1.0.2":
+"@tauri-apps/api@1.0.2", "@tauri-apps/api@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.0.2.tgz#5228720e35d50fd08df87067dc29e7306c1f7a10"
   integrity sha512-yuNW0oeJ1/ZA7wNF1KgxhHrSu5viPVzY/UgUczzN5ptLM8dH15Juy5rEGkoHfeXGju90Y/l22hi3BtIrp/za+w==
@@ -274,7 +274,14 @@ styled-jsx@5.0.4:
   resolved "https://registry.yarnpkg.com/styled-jsx/-/styled-jsx-5.0.4.tgz#5b1bd0b9ab44caae3dd1361295559706e044aa53"
   integrity sha512-sDFWLbg4zR+UkNzfk5lPilyIgtpddfxXEULxhujorr5jtePTUqiPDc5BC0v1NRqTr/WaFBGQQUoYToGlF4B2KQ==
 
-tslib@^2.4.0:
+"tauri-plugin-store-api@github:tauri-apps/tauri-plugin-store":
+  version "0.1.0"
+  resolved "https://codeload.github.com/tauri-apps/tauri-plugin-store/tar.gz/67530781d86b73fae4ee03c17f43c76f09ae3400"
+  dependencies:
+    "@tauri-apps/api" "1.0.2"
+    tslib "2.4.0"
+
+tslib@2.4.0, tslib@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
